@@ -7,6 +7,10 @@ Previous work has considered the overlapping memory dumping problem (oMDP), whic
 Here, we consider additional decisions in the memory dumping plans that are implementable in practice: data transfer from each buffer can be interrupted after a given time, once per downlink window, preventing it from dumping data until the next window. The new problem is called oMDPi (oMDP with interruptions).
 We propose a hybrid heuristic to solve the general oMDPi, embedding a flow relaxation and the single-window heuristic. The results on both real and realistic generated instances show that our heuristic achieves a significant reduction of memory peaks in a reasonable time compared to previous work, making the new policy attractive for future space missions.
 
+## Complexity proof
+
+We prove that oMDPi is weakly NP-complete from reduction to SUBSET-SUM. The complexity proof is provided in the document complexity.pdf in the root folder.
+
 ## Setup
 
 - Download Cplex from the official website: [Install cplex](https://www.ibm.com/fr-fr/products/ilog-cplex-optimization-studio/cplex-optimizer)
